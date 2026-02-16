@@ -1,0 +1,82 @@
+body {
+    background-color: #0d1117;
+    color: #3fb950;
+    font-family: Consolas, 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 20px;
+    height: 100vh;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.terminal {
+    max-width: 900px;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    border-bottom: 1px solid #30363d;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+#output {
+    flex-grow: 1;
+    overflow-y: auto;
+    white-space: pre-wrap;
+    margin-bottom: 10px;
+}
+
+.line {
+    margin: 2px 0;
+    line-height: 1.4;
+}
+
+.input-line {
+    display: flex;
+    align-items: center;
+}
+
+.prompt {
+    color: #58a6ff;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+input[type="text"] {
+    background: transparent;
+    border: none;
+    color: #c9d1d9;
+    font-family: inherit;
+    font-size: inherit;
+    flex-grow: 1;
+    outline: none;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #0d1117; 
+}
+ 
+::-webkit-scrollbar-thumb {
+    background: #30363d; 
+}
+
+.error {
+    color: #ff7b72;
+}
+
+.info {
+    color: #79c0ff;
+}
+
+.hidden {
+    opacity: 0.5; /* Visual cue for hidden files if we want, or just hide them */
+}

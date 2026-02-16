@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CTF Terminal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="terminal">
+    <div class="header">
+      <span class="status">Connected: guest@ctf-challenge:22</span>
+    </div>
+    <div id="output">
+      <div class="line">Welcome to CTF-WebShell v1.0.</div>
+      <div class="line">Type 'help' for available commands.</div>
+      <div class="line"><br></div>
+    </div>
+    <div class="input-line">
+      <span class="prompt">guest@ctf:~$</span>
+      <input type="text" id="command-input" autocomplete="off" autofocus>
+    </div>
+  </div>
+
+  <!-- 
+        TODO: Remove this comment before deploying to production!
+        Dev Note: Part of the super secret flag is located in /root/flag.txt
+        but only the admin user can access it. 
+        Remember the admin password is: "w3b_sh3ll_r00t_4cc3ss"
+    -->
+  <script src="script.obfuscated.js"></script>
+</body>
+
+</html>
